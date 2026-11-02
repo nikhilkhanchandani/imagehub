@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'ari',
+      name: 'imagehub',
       script: './index.js',
       watch: false,
       instances: 1,
@@ -22,7 +22,7 @@ module.exports = {
   ],
 };
 /*
-  pm2 stop ari
+  pm2 stop imagehub
   pm2 start ecosystem.config.js --env production
   
   
@@ -35,7 +35,7 @@ module.exports = {
   
     go to RDP
     
-    1. pm2 stop ari
+    1. pm2 stop imagehub
     
     then do
     
@@ -46,10 +46,10 @@ module.exports = {
     3. pm2 start ecosystem.config.js --env stage
        pm2 start ecosystem.config.js --env production
     
-    pm2 restart ari
-    pm2 reload ari
+    pm2 restart imagehub
+    pm2 reload imagehub
     
-    pm2 delete ari
+    pm2 delete imagehub
     
     pm2 monit
     */
